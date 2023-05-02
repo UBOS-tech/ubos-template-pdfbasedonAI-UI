@@ -1,0 +1,85 @@
+[
+    {
+        "_id": "6436be499cb82c7bb5f195e6",
+        "applicationId": "uitemplatepdf",
+        "organizationId": "Org",
+        "pluginType": "API",
+        "pluginId": "API",
+        "Action": {
+            "name": "sendToAI",
+            "datasource": {
+                "name": "DEFAULT_REST_DATASOURCE",
+                "datasourceConfiguration": {
+                    "url": "{{main.env.back}}/sendToAI"
+                },
+                "invalids": [],
+                "isValid": true,
+                "pluginId": "API",
+                "messages": []
+            },
+            "executeOnLoad": false,
+            "pageId": "pdf",
+            "actionConfiguration": {
+                "timeoutInMillisecond": 10000,
+                "encodeParamsToggle": true,
+                "httpMethod": "POST",
+                "headers": [
+                    {
+                        "key": "content-type",
+                        "value": "application/json"
+                    }
+                ],
+                "queryParameters": [],
+                "body": "{\n\t\"technology\": {{JSON.stringify(category_field.selectedOptionValue)}},\n\t\"industry\": {{JSON.stringify(industry_field.selectedOptionValue)}},\n\t\"improve\": {{JSON.stringify(improve_field.selectedOptionValue)}}\n}",
+                "bodyFormData": [],
+                "formData": {
+                    "apiContentType": "none"
+                },
+                "pluginSpecifiedTemplates": [
+                    {
+                        "value": true
+                    }
+                ]
+            },
+            "dynamicBindingPathList": [
+                {
+                    "key": "body"
+                },
+                {
+                    "key": "datasourceUrl"
+                }
+            ],
+            "isValid": true,
+            "invalids": [],
+            "jsonPathKeys": [
+                "main.env.back",
+                "JSON.stringify(category_field.selectedOptionValue)",
+                "JSON.stringify(industry_field.selectedOptionValue)",
+                "JSON.stringify(improve_field.selectedOptionValue)",
+                "main.env.back,2023-04-12T14:20:57.724Z,2023-04-28T14:05:21.328Z,read:actions,manage:actions,execute:actions,DEFAULT_REST_DATASOURCE,{{main.env.back"
+            ],
+            "userSetOnLoad": false,
+            "confirmBeforeExecute": false
+        },
+        "createdAt": "2023-04-12T14:20:57.724Z",
+        "updatedAt": "2023-04-28T14:05:25.330Z",
+        "deleted": false,
+        "policies": [
+            {
+                "permission": "read:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "manage:actions",
+                "groups": [],
+                "users": []
+            },
+            {
+                "permission": "execute:actions",
+                "groups": [],
+                "users": []
+            }
+        ]
+    }
+]

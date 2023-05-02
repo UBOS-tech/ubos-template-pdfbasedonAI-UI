@@ -1,0 +1,47 @@
+{
+    "_id": "6436a1929cb82c7bb5f195de",
+    "name": "uitemplatepdf",
+    "slug": "uitemplatepdf",
+    "organizationId": "Org",
+    "isPublic": true,
+    "isMenu": false,
+    "createdAt": "2023-04-12T12:18:26.934Z",
+    "updatedAt": "2023-04-12T12:18:26.934Z",
+    "deleted": false,
+    "pages": [
+        {
+            "_id": "pdf",
+            "isDefault": true
+        }
+    ],
+    "policies": [
+        {
+            "permission": "makePublic:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "read:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "publish:applications",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:applications",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "gitApplicationMetadata": {
+        "browserSupportedRemoteUrl": "https://github.com/UBOS-tech/ubos-template-pdfbasedonAI-UI",
+        "defaultApplicationId": "uitemplatepdf",
+        "defaultBranchName": "main",
+        "isRepoPrivate": true,
+        "remoteUrl": "git@github.com:UBOS-tech/ubos-template-pdfbasedonAI-UI.git",
+        "repoName": "ubos-template-pdfbasedonAI-UI"
+    }
+}
