@@ -13,6 +13,12 @@ Pdf based on Ai
   <a href="https://github.com/UBOS-tech">GitHub</a>
   </h3>
 
+<div align="center">
+  
+  [![Use template](https://ubos.tech/wp-content/uploads/2023/06/download-logo.png)](https://platform.ubos.tech/?templateId=6453bd88718c5a00123659a3)
+  
+</div>
+
 This service helps business owners explore how a particular technology can improve their industry by providing a clear and concise explanation of the technology and examples of its applications in industry management. Users can submit their questions and receive a custom PDF document with answers tailored to their needs. Streamline your industry exploration process with our technology-focused service.
 
 ## Demo
